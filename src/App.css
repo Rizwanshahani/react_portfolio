@@ -1,0 +1,193 @@
+:root{
+  --box-shadow:8px 8px 10px 0px rgba(101,175,10, 0.5);
+  --bg-color:rgb(40,47,97);
+}
+body{
+  background-color: rgb(11, 26, 51);
+  color: white;
+}
+/*Nav bar css */
+.container-nav{
+  display: flex;
+  justify-content: space-around;
+  height: 12vh;
+  align-items: center;
+}
+.container-nav .left a{
+  text-decoration: none;
+  color: white;
+  padding: 5%;
+  align-items: center;
+  font-weight: bold;
+}
+.container-nav .left a:hover{
+  border-bottom: 2px solid yellow;
+}
+/*Home */
+.container-home{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90vh;
+}
+.container-home .right{
+  width: 50%;
+  border: 2px solid yellow;
+  padding: 2%;
+  margin: 10%;
+  background-color: var(--bg-color);
+  box-shadow: var(--box-shadow);
+}
+.container-home .right p{
+  font-size: 1.7rem;
+  margin-left: 30px;
+  color: rgb(113, 224, 137);
+}
+
+.container-home .left img{
+  width: 50%;
+  border-radius: 100%;
+  border: 2px solid yellow;
+  margin: 20%;
+  animation-name: identifier;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes identifier {
+  0%{
+    border-color: blue;
+    transform: translate(0,0px);
+    box-shadow:10px 10px 100px 50px blue ;
+  }
+  25%{
+    border-color: yellow;
+    transform: translate(0,10px);
+    box-shadow:10px 10px 100px 50px yellow ;
+  }
+  75%{
+    border-color: rgb(130, 217, 160);
+    box-shadow:10px 10px 100px 50px rgb(130, 217, 160) ;
+  }
+  100%{
+    border-color:rgb(139, 217, 160);
+    transform: translate(0,-0px);
+    box-shadow:10px 10px 100px 50px rgb(130, 217, 160) ;
+  }
+}
+/* Experience */
+.container-experience{
+  height: 102vh;
+}
+.container-experience h1{
+  margin-left: 2%;
+}
+.container-experience .ex{
+  background-color: var(--bg-color);
+  width: 40%;
+  height: 25vh;
+  margin-top: 2%;
+  border: 2px solid yellow;
+  box-shadow: var(--box-shadow);
+}
+.ex .text p{
+  color: yellow;
+}
+/* Skills */
+.container-skill{
+  height: 110vh;
+}
+.container-skill h1{
+  margin-left: 2%;
+}
+.container-skill .skill-item{
+  width: 50%;
+  margin-left: 25%;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 40%;
+}
+.container-skill .skill-item .skill{
+  width: 28%;
+  height: 20vh;
+  margin-top: 3%;
+  text-align: center;
+  background-color: var(--bg-color);
+  border: 3px solid yellow;
+  box-shadow: var(--box-shadow);
+}
+.container-skill .skill-item .skill img{
+  width: 14vw;
+  height: 20vh;
+  opacity: 80%;
+}
+.container-skill .skill-item .skill img:hover{
+  opacity: 60%;
+}
+/* project */
+.container-project{
+  height: 60vh;
+}
+.container-project h1{
+  margin-left: 2%;
+}
+.container-project .project-items{
+  display: flex;
+  margin-left: 10%;
+  justify-content:center;
+  align-items: center;
+}
+.container-project .project-items .pro{
+  
+  width: 15%;
+  height: 40vh;
+  margin-right: 8%;
+  background-color: var(--bg-color);
+  border: 2px solid yellow;
+  box-shadow: var(--box-shadow);
+}
+.container-project .project-items .pro img{
+  margin-left: 10.5%;
+  margin-top: 3%;
+  width: 10.25vw;
+  border: 2px solid yellow;
+  border-radius: 5%;
+}
+.container-project .project-items .pro h3{
+  
+  margin: 2%;
+  margin-top: 8%;
+}
+.container-project .project-items .pro:hover{
+  color: yellow;
+  background-color: rgb(40, 40, 90);
+}
+/* Contact */
+.container-contact{
+  height: 40vh;
+}
+.container-contactx h1{
+  margin-left: 2%;
+}
+.container-contact .contact-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-contact .contact-list .contact-items{
+  width: 4%;
+  height: 11vh;
+  margin: 2%;
+  border-radius: 20%;
+  background-color: black;
+  /* border: 2px solid yellow; */
+}
+.container-contact .contact-list .contact-items a{
+  font-size: 3rem;
+  color: white;
+  border: 2px solid yellow;
+  border-radius: 30%;
+  box-shadow: var(--box-shadow);
+}
+.container-contact .contact-list .contact-items a:hover{
+  background-color: var(--bg-color);
+}
