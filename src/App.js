@@ -8,6 +8,7 @@ import Contact from './components/contact';
 import './App.css';
 import Aos from 'aos';
 import "aos/dist/aos.css"
+import './qry.css';
 
 function App() {
   useEffect(()=>{

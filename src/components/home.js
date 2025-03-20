@@ -22,7 +22,7 @@ const Home = ()=> {
         <div className="right"data-aos="fade-up-right"data-aos-duration="1000">
        
             <h1>Rizwan Shahani</h1>
-            <p ref={typedref}>  </p>
+            <p ref={typedref}></p>
             
         </div>
 

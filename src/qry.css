@@ -1,0 +1,111 @@
+@media (max-width: 720px) {
+    .navd{
+        display: none;
+    }
+    .navm{
+        font-size: 3rem;
+    }
+    .navm:hover{
+        border-bottom: 2px solid yellow;
+    }
+    .container-nav{
+        height: 12vh;
+    }
+    .container-home{
+        margin-top: 5%;
+        height: 60vh;
+    }
+    .container-home .right{
+        margin-left: 5%;
+        width: 50%;
+        height: 42vh;
+      }
+      .container-home .left img{
+        width: 60%;
+      }
+      .container-experience{
+        height: 95vh;
+      }
+      .container-experience .ex{
+        width: 80%;
+        height: 25vh;
+        margin-top: 3%;
+      }
+      .container-skill{
+        height: 96vh;
+      }
+      .container-skill .skill-item{
+        width: 70%;
+        margin-left: 15%;
+       gap: 30%;
+      }
+      .container-skill .skill-item .skill{
+        margin-top: 4%;
+        width: 22vw;
+        height: 18vh;
+      }
+      .container-skill .skill-item .skill img{
+        width: 22vw;
+        height: 18vh;
+        opacity: 80%;
+      }
+      .container-project{
+        height: 35vh;
+      }
+      .container-project .project-items{
+        margin-left: 10%;
+      }
+      .container-project .project-items .pro{
+        width: 25%;
+        height: 15vh;
+      }
+      .container-project .project-items .pro img{
+        margin-left: 16%;
+        margin-top: 5%;
+        width: 14vw;
+      }
+      .container-project .project-items .pro h3{
+        font-size: 0.75rem;
+        margin-left: 8%;
+        margin-top: 13%;
+      }
+      .container-contact{
+        height: 28vh;
+      }
+      .container-contact .contact-list .contact-items{
+        width: 10%;
+        height: 5vh;
+        margin: 2%;
+        border-radius: 20%;
+        background-color: black;
+      }
+      .container-contact .contact-list .contact-items a{
+        font-size: 2rem;
+        margin-top: 10%;
+      }
+      .navd {
+        display: none;
+        background: #333;
+        color: white;
+        padding: 10px;
+      }
+      
+      .show {
+        display: flex;
+        flex-direction: column;
+        margin-top: 21%;
+      }
+      
+      .hide {
+        display: none;
+      }
+      
+      .navm {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: rgb(40,47,97);
+        color: white;
+        box-shadow: 8px 8px 10px 0px rgba(101,175,10, 0.5);
+      }
+      
+  }
