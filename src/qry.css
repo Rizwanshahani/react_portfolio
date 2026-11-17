@@ -110,7 +110,7 @@
     min-height: 0;
     grid-template-columns: 1fr;
     gap: 42px;
-    padding: 70px 0 56px;
+    padding: 28px 0 56px;
   }
 
   .hero-copy h1 {

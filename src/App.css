@@ -130,7 +130,7 @@ main {
   align-items: center;
   gap: clamp(50px, 8vw, 120px);
   margin: 0 auto;
-  padding: 68px 0 72px;
+  padding: 28px 0 72px;
 }
 
 .hero-copy {
