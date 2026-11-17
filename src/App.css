@@ -757,6 +757,7 @@ main {
   width: 34px;
   height: 34px;
   place-items: center;
+  pointer-events: none;
   border: 1px solid rgba(240, 237, 229, 0.38);
   border-radius: 50%;
   color: #f0ede5;
@@ -786,6 +787,16 @@ main {
   font-family: var(--serif);
   font-size: 1.25rem;
   font-weight: 500;
+}
+
+.project-title-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 180ms ease;
+}
+
+.project-title-link:hover {
+  color: var(--gold-light);
 }
 
 .project-details p {
@@ -825,6 +836,22 @@ main {
 
 .project-status {
   color: var(--muted);
+}
+
+.project-access-toast {
+  position: fixed;
+  z-index: 1000;
+  bottom: 96px;
+  left: 50%;
+  width: min(580px, calc(100vw - 32px));
+  padding: 14px 18px;
+  transform: translateX(-50%);
+  border: 1px solid var(--gold);
+  background: var(--background);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  color: var(--paper);
+  font-size: 0.82rem;
+  line-height: 1.55;
 }
 
 .project-index {
@@ -1223,6 +1250,7 @@ main {
 }
 
 .contact-form {
+  scroll-margin-top: 100px;
   padding: clamp(24px, 4vw, 44px);
   border: 1px solid var(--line);
   background: var(--surface);

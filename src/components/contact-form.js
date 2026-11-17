@@ -1,12 +1,22 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FiArrowUpRight } from "react-icons/fi";
 
 const contactEmail = "rizwanshahani432@gmail.com";
 
 function ContactForm() {
   const [emailHref, setEmailHref] = useState("");
+  const [projectType, setProjectType] = useState("");
+  const [message, setMessage] = useState("");
+
+  useEffect(() => {
+    const topic = new URLSearchParams(window.location.search).get("topic");
+    if (topic === "al-haiwan-meeting") {
+      setProjectType("ERPNext / Frappe");
+      setMessage("I'd like to arrange a meeting to discuss the Al Haiwan Genetics project.");
+    }
+  }, []);
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -31,7 +41,7 @@ function ContactForm() {
   }
 
   return (
-    <form className="contact-form" onSubmit={handleSubmit}>
+    <form className="contact-form" id="contact-form" onSubmit={handleSubmit}>
       <div className="form-grid">
         <label className="form-field">
           <span>Your name</span>
@@ -55,11 +65,16 @@ function ContactForm() {
         </label>
         <label className="form-field form-field-wide">
           <span>What are you looking to build?</span>
-          <select name="projectType" defaultValue="">
+          <select
+            name="projectType"
+            value={projectType}
+            onChange={(event) => setProjectType(event.target.value)}
+          >
             <option value="">Choose a project type</option>
             <option value="Website">Website</option>
             <option value="E-commerce">E-commerce</option>
             <option value="Web application">Web application</option>
+            <option value="ERPNext / Frappe">ERPNext / Frappe</option>
             <option value="Something else">Something else</option>
           </select>
         </label>
@@ -69,6 +84,8 @@ function ContactForm() {
             name="message"
             placeholder="Share your idea, goals, or anything else I should know..."
             rows="6"
+            value={message}
+            onChange={(event) => setMessage(event.target.value)}
             required
           />
         </label>

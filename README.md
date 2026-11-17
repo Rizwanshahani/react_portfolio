@@ -18,6 +18,8 @@ The contact page includes LinkedIn and GitHub links, a Facebook sharing action,
 and WhatsApp at `+92 319 7941472`. The project gallery uses live-site captures
 where available; other projects use labeled, project-specific previews rather
 than unrelated stock imagery.
+AURA and Raj Meena link to their live sites. The private Al Haiwan project
+opens a prefilled meeting inquiry on the contact page.
 
 The color theme can be switched from the navigation and is saved in the browser.
 The contact form prepares a message in the visitor's email app; it does not send

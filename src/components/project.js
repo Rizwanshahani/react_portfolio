@@ -1,5 +1,24 @@
 import Link from "next/link";
 import projects from "../data/projects";
+import ProjectDestination from "./project-destination";
+
+function ProjectLink({ project, className, ariaLabel, children }) {
+  const href = project.href || project.contactHref;
+
+  if (!href) return children;
+
+  return (
+    <ProjectDestination
+      href={href}
+      className={className}
+      ariaLabel={ariaLabel}
+      external={Boolean(project.href)}
+      restricted={Boolean(project.restricted)}
+    >
+      {children}
+    </ProjectDestination>
+  );
+}
 
 function ProjectPreview({ preview }) {
   return (
@@ -50,53 +69,61 @@ function Project({ showMoreLink = true, showHeading = true }) {
         </div>
       )}
       <div className="project-grid">
-        {displayedProjects.map((project) => (
-          <article className="project-card" key={project.number}>
-            <div className={`project-image${project.preview ? " project-image-preview" : ""}`}>
-              {project.href ? (
-                <a
+        {displayedProjects.map((project) => {
+          const hasDestination = Boolean(project.href || project.contactHref);
+
+          return (
+            <article className="project-card" key={project.number}>
+              <div
+                className={`project-image${project.preview ? " project-image-preview" : ""}`}
+              >
+                <ProjectLink
+                  project={project}
                   className="project-image-link"
-                  href={project.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label={`${project.actionLabel || project.status}: ${project.title}`}
+                  ariaLabel={`${project.actionLabel || project.status}: ${project.title}`}
                 >
                   {project.image ? (
                     <img src={project.image} alt={project.alt} />
                   ) : (
                     <ProjectPreview preview={project.preview} />
                   )}
-                </a>
-              ) : project.image ? (
-                <img src={project.image} alt={project.alt} />
-              ) : (
-                <ProjectPreview preview={project.preview} />
-              )}
-              <span className="project-number">{project.number}</span>
-              {project.href && <span className="project-arrow" aria-hidden="true">↗</span>}
-            </div>
-            <div className="project-details">
-              <div>
-                <h3>{project.title}</h3>
-                <p>{project.category}</p>
-                <p className="project-description">{project.description}</p>
-                {project.href ? (
-                  <a
-                    className="project-live-link"
-                    href={project.href}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    {project.actionLabel || project.status} <span aria-hidden="true">↗</span>
-                  </a>
-                ) : (
-                  <span className="project-status">{project.status}</span>
+                </ProjectLink>
+                <span className="project-number">{project.number}</span>
+                {hasDestination && (
+                  <span className="project-arrow" aria-hidden="true">↗</span>
                 )}
               </div>
-              <span className="project-index">{project.number}</span>
-            </div>
-          </article>
-        ))}
+              <div className="project-details">
+                <div>
+                  <h3>
+                    <ProjectLink
+                      project={project}
+                      className="project-title-link"
+                      ariaLabel={`${project.actionLabel || project.status}: ${project.title}`}
+                    >
+                      {project.title}
+                    </ProjectLink>
+                  </h3>
+                  <p>{project.category}</p>
+                  <p className="project-description">{project.description}</p>
+                  {hasDestination ? (
+                    <ProjectLink
+                      project={project}
+                      className="project-live-link"
+                      ariaLabel={`${project.actionLabel || project.status}: ${project.title}`}
+                    >
+                      {project.actionLabel || project.status}{" "}
+                      <span aria-hidden="true">↗</span>
+                    </ProjectLink>
+                  ) : (
+                    <span className="project-status">{project.status}</span>
+                  )}
+                </div>
+                <span className="project-index">{project.number}</span>
+              </div>
+            </article>
+          );
+        })}
       </div>
       {showMoreLink && (
         <div className="projects-more">

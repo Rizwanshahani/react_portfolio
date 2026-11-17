@@ -24,7 +24,7 @@ const projects = [
   {
     number: "03",
     title: "AURA E-Commerce Storefront",
-    category: "Technology · MERN e-commerce",
+    category: "Technology · Live MERN e-commerce",
     description:
       "A premium technology and electronics storefront with product-focused presentation and a shopping-oriented layout.",
     preview: {
@@ -35,17 +35,16 @@ const projects = [
       title: "Find your next essential.",
       description: "A focused shopping experience for modern tech.",
       items: ["Phones", "Audio", "Accessories"],
-      caption: "Store preview · live deployment unavailable",
+      caption: "Illustrative preview · visit live storefront",
       alt: "Illustrative storefront preview for the AURA electronics project, not a site screenshot",
     },
-    href: "https://github.com/auraecommerce15-cpu/aura-Ecommerce.",
-    status: "View source repository",
-    actionLabel: "View source",
+    href: "https://aura-ecommerce15.vercel.app/blog",
+    status: "Visit live site",
   },
   {
     number: "04",
     title: "Raj Meena Fashion Store",
-    category: "Fashion · Storefront",
+    category: "Fashion · Live storefront",
     description:
       "A brand-led storefront for luxury pret and casual wear, designed for a women's clothing label.",
     preview: {
@@ -56,10 +55,11 @@ const projects = [
       title: "A considered wardrobe.",
       description: "A refined storefront for the season's collection.",
       items: ["Luxury pret", "Casual", "New season"],
-      caption: "Store preview · live deployment unavailable",
+      caption: "Illustrative preview · visit live storefront",
       alt: "Illustrative fashion storefront preview for the Raj Meena project, not a site screenshot",
     },
-    status: "Live deployment unavailable",
+    href: "https://raj-meena-eta.vercel.app/",
+    status: "Visit live site",
   },
   {
     number: "05",
@@ -67,6 +67,10 @@ const projects = [
     category: "ERPNext / Frappe · Practical work",
     description:
       "Worked through company setup, master-data imports, chart-of-accounts structure, validation issues, and implementation notes.",
+    contactHref: "/contact?topic=al-haiwan-meeting#contact-form",
+    restricted: true,
+    actionLabel: "Request a meeting",
+    status: "Private implementation · meeting by request",
     preview: {
       kind: "erp",
       brand: "AL HAIWAN",
