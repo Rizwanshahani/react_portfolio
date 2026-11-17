@@ -304,23 +304,6 @@ main {
   letter-spacing: 0.12em;
 }
 
-.portrait-orbit {
-  position: absolute;
-  z-index: 0;
-  border: 1px solid rgba(201, 169, 110, 0.28);
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-.orbit-one {
-  inset: -10px -8px 55px 42px;
-}
-
-.orbit-two {
-  inset: 16px 18px 22px -22px;
-  border-color: rgba(201, 169, 110, 0.12);
-}
-
 .portrait-note {
   position: absolute;
   right: -40px;

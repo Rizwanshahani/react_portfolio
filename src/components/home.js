@@ -35,8 +35,6 @@ function Home() {
             <span>Crafting with intention</span>
           </div>
         </div>
-        <span className="portrait-orbit orbit-one" aria-hidden="true" />
-        <span className="portrait-orbit orbit-two" aria-hidden="true" />
         <span className="portrait-note">PORTFOLIO&nbsp; — &nbsp;2026</span>
       </div>
     </section>
