@@ -24,7 +24,7 @@ export default function AboutPage() {
 
       <section className="about-story">
         <div className="about-photo">
-          <img src="/my.jpg" alt="Rizwan Shahani" />
+          <img src="/rizwan-portrait.png" alt="Rizwan Shahani" />
           <span>Rizwan Shahani · Frontend Developer</span>
         </div>
         <div className="about-story-copy">

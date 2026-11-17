@@ -29,7 +29,7 @@ function Home() {
 
       <div className="hero-portrait">
         <div className="portrait-frame">
-          <img src="/my.jpg" alt="Rizwan Shahani" />
+          <img src="/rizwan-portrait.png" alt="Rizwan Shahani" />
           <div className="portrait-caption">
             <span className="caption-index">01 / 05</span>
             <span>Crafting with intention</span>
