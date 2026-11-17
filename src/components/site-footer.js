@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { FiMail } from "react-icons/fi";
 import socialLinks from "../data/social-links";
 
 function SiteFooter() {
@@ -13,10 +12,7 @@ function SiteFooter() {
         <Link href="/about">About</Link>
         <Link href="/projects">Projects</Link>
         <Link href="/blog">Journal</Link>
-        <Link href="/contact">
-          <FiMail aria-hidden="true" />
-          Contact
-        </Link>
+        <Link href="/contact">Contact</Link>
       </nav>
       <div className="footer-social">
         <span className="footer-social-label">Connect &amp; Share</span>

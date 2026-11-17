@@ -957,13 +957,9 @@ main {
 .footer-links a {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
   color: var(--muted);
+  font-size: 0.85rem;
   text-decoration: none;
-}
-
-.footer-links svg {
-  font-size: 0.8rem;
 }
 
 .footer-links a:hover {
