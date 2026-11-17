@@ -14,7 +14,7 @@
   }
 
   .content-section {
-    padding: 90px 0;
+    padding: 68px 0;
   }
 
   .approach-card {
@@ -110,7 +110,7 @@
     min-height: 0;
     grid-template-columns: 1fr;
     gap: 42px;
-    padding: 70px 0 82px;
+    padding: 70px 0 56px;
   }
 
   .hero-copy h1 {
@@ -133,7 +133,7 @@
   }
 
   .content-section {
-    padding: 76px 0;
+    padding: 54px 0;
   }
 
   .section-heading {
@@ -277,7 +277,7 @@
   }
 
   .projects-section {
-    padding-bottom: 82px;
+    padding-bottom: 60px;
   }
 
   .contact-panel {

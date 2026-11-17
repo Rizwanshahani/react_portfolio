@@ -130,7 +130,7 @@ main {
   align-items: center;
   gap: clamp(50px, 8vw, 120px);
   margin: 0 auto;
-  padding: 68px 0 92px;
+  padding: 68px 0 72px;
 }
 
 .hero-copy {
@@ -304,7 +304,7 @@ main {
 .content-section {
   width: min(1200px, calc(100% - 64px));
   margin: 0 auto;
-  padding: 112px 0;
+  padding: 88px 0;
   border-top: 1px solid var(--line);
 }
 
@@ -462,7 +462,7 @@ main {
 }
 
 .projects-section {
-  padding-bottom: 126px;
+  padding-bottom: 88px;
 }
 
 .project-grid {
