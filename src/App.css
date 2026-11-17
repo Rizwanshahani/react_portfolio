@@ -127,10 +127,10 @@ main {
   width: min(1200px, calc(100% - 64px));
   min-height: min(790px, calc(100svh - 82px));
   grid-template-columns: 1.1fr 0.82fr;
-  align-items: center;
+  align-items: start;
   gap: clamp(50px, 8vw, 120px);
   margin: 0 auto;
-  padding: 28px 0 72px;
+  padding: 20px 0 72px;
 }
 
 .hero-copy {
