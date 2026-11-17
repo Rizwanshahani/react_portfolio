@@ -328,8 +328,10 @@
   }
 
   .footer-links {
+    flex: 0 0 100%;
     order: 2;
     width: 100%;
+    justify-content: flex-start;
   }
 
   .footer-copyright {
@@ -337,7 +339,9 @@
   }
 
   .footer-social {
+    flex: 0 0 100%;
     order: 4;
+    justify-items: start;
   }
 
   .about-story {
