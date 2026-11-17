@@ -14,7 +14,7 @@ export const metadata = {
   },
   description: 'Portfolio of Rizwan Shahani, junior frontend developer and IT graduate.',
   icons: {
-    icon: '/favicon.ico',
+    icon: '/icon.svg',
   },
 };
 
