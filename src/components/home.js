@@ -30,12 +30,7 @@ function Home() {
       <div className="hero-portrait">
         <div className="portrait-frame">
           <img src="/rizwan-portrait.png" alt="Rizwan Shahani" />
-          <div className="portrait-caption">
-            <span className="caption-index">01 / 05</span>
-            <span>Crafting with intention</span>
-          </div>
         </div>
-        <span className="portrait-note">PORTFOLIO&nbsp; — &nbsp;2026</span>
       </div>
     </section>
   );

@@ -13,10 +13,6 @@
     height: clamp(370px, 56vw, 490px);
   }
 
-  .portrait-note {
-    right: -23px;
-  }
-
   .content-section {
     padding: 90px 0;
   }
@@ -134,10 +130,6 @@
 
   .portrait-frame {
     height: min(110vw, 470px);
-  }
-
-  .portrait-note {
-    right: -25px;
   }
 
   .content-section {
