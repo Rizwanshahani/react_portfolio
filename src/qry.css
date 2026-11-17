@@ -173,12 +173,16 @@
     min-height: 0;
   }
 
-  .skill-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .process-grid {
+    grid-template-columns: 1fr;
   }
 
-  .skill-card {
-    min-height: 148px;
+  .process-card {
+    min-height: 0;
+  }
+
+  .process-card h3 {
+    margin-top: 25px;
   }
 
   .project-grid {

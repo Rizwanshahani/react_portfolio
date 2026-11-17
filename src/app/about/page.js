@@ -1,5 +1,4 @@
 import Experience from "../../components/experience";
-import Skill from "../../components/skill";
 import Link from "next/link";
 
 export const metadata = {
@@ -47,7 +46,6 @@ export default function AboutPage() {
       </section>
 
       <Experience />
-      <Skill />
     </main>
   );
 }

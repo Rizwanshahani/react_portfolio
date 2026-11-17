@@ -1,6 +1,6 @@
 import Home from './components/home';
 import Experience from './components/experience';
-import Skill from './components/skill';
+import Process from './components/process';
 import Project from './components/project';
 import Contact from './components/contact';
 
@@ -9,7 +9,7 @@ function App() {
     <main className="home-page">
       <Home />
       <Experience />
-      <Skill />
+      <Process />
       <Project />
       <Contact />
     </main>

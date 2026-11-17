@@ -5,7 +5,7 @@ A portfolio site built with Next.js App Router.
 ## Pages
 
 - `/` — portfolio overview
-- `/about` — background, approach, and skills
+- `/about` — background and approach
 - `/projects` — selected project concepts
 - `/contact` — contact form and social links
 

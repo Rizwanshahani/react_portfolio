@@ -399,8 +399,7 @@ main {
   transform: translateY(-4px);
 }
 
-.card-index,
-.skill-index {
+.card-index {
   color: var(--gold);
   font-size: 0.64rem;
   letter-spacing: 0.1em;
@@ -438,64 +437,59 @@ main {
   letter-spacing: 0.15em;
 }
 
-.skills-section {
-  padding-top: 93px;
-}
-
-.skill-grid {
+.process-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  border-top: 1px solid var(--line);
-  border-left: 1px solid var(--line);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
 }
 
-.skill-card {
-  position: relative;
+.process-card {
+  min-height: 240px;
+  padding: 27px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.process-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(201, 169, 110, 0.55);
+}
+
+.process-card-top {
   display: flex;
-  min-height: 172px;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 14px;
-  border-right: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.012);
-  transition: background 180ms ease;
+  justify-content: space-between;
 }
 
-.skill-card:hover {
-  background: rgba(201, 169, 110, 0.055);
+.process-number {
+  color: var(--gold);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
 }
 
-.skill-index {
-  position: absolute;
-  top: 15px;
-  left: 16px;
-  color: #77766d;
-  font-size: 0.55rem;
+.process-icon {
+  color: var(--gold-light);
+  font-size: 1.4rem;
 }
 
-.skill-logo {
-  display: grid;
-  width: 54px;
-  height: 54px;
-  place-items: center;
-  overflow: hidden;
-  border-radius: 50%;
-  background: #f0ede5;
-}
-
-.skill-logo img {
-  width: 68%;
-  height: 68%;
-  object-fit: contain;
-  filter: saturate(0.82);
-}
-
-.skill-name {
+.process-card h3 {
+  margin: 37px 0 11px;
   color: var(--paper);
-  font-size: 0.76rem;
-  letter-spacing: 0.03em;
+  font-family: var(--serif);
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+.process-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.8;
+}
+
+.process-link {
+  margin-top: 28px;
 }
 
 .projects-section {
