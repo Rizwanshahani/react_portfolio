@@ -6,11 +6,12 @@ import SiteFooter from '../components/site-footer';
 import { ThemeProvider } from '../components/theme-provider';
 
 export const metadata = {
+  metadataBase: new URL('https://rizwanshahani.vercel.app'),
   title: {
     default: 'Rizwan Shahani | Portfolio',
     template: '%s | Rizwan Shahani',
   },
-  description: 'Portfolio of Rizwan Shahani, full stack web developer.',
+  description: 'Portfolio of Rizwan Shahani, junior frontend developer and IT graduate.',
   icons: {
     icon: '/favicon.ico',
   },

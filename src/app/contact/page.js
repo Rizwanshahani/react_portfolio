@@ -14,7 +14,7 @@ export const metadata = {
 const socialLinks = [
   { label: "WhatsApp", href: "https://wa.me/923090687624", icon: <FaWhatsapp /> },
   { label: "Instagram", href: "https://www.instagram.com/rizwanshahani7624", icon: <FaInstagram /> },
-  { label: "LinkedIn", href: "https://www.linkedin.com/in/rizwan-shahani-066973356", icon: <TiSocialLinkedinCircular /> },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/muhammad-rizwan-0a967b41b", icon: <TiSocialLinkedinCircular /> },
   { label: "GitHub", href: "https://github.com/Rizwanshahani", icon: <FaGithub /> },
 ];
 

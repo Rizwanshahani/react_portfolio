@@ -2,12 +2,12 @@ function Experience() {
   return (
     <section className="content-section approach-section" id="experience">
       <div className="section-heading">
-        <p className="eyebrow">01 — What I do</p>
+        <p className="eyebrow">01 — How I contribute</p>
         <div>
-          <h2>Good work starts with <em>good thinking.</em></h2>
+          <h2>Practical skills, <em>thoughtfully applied.</em></h2>
           <p className="section-intro">
-            I bring thoughtful design and dependable engineering together to
-            create digital products that feel effortless to use.
+            My experience spans responsive frontend work, live website
+            projects, and hands-on ERPNext/Frappe implementation workflows.
           </p>
         </div>
       </div>
@@ -15,32 +15,32 @@ function Experience() {
         <article className="approach-card">
           <span className="card-index">01</span>
           <div className="card-mark" aria-hidden="true">✳</div>
-          <h3>Portfolio experiences</h3>
+          <h3>Responsive frontend</h3>
           <p>
-            Responsive, personal websites built to tell a story and make a
-            lasting first impression.
+            React.js interfaces built with reusable components, clear
+            structure, and layouts that adapt to different screens.
           </p>
-          <span className="card-foot">DESIGN &amp; DEVELOPMENT</span>
+          <span className="card-foot">REACT · JAVASCRIPT · CSS</span>
         </article>
         <article className="approach-card">
           <span className="card-index">02</span>
           <div className="card-mark" aria-hidden="true">◈</div>
-          <h3>E-commerce, made clear</h3>
+          <h3>Useful web experiences</h3>
           <p>
-            Considered storefronts with intuitive product discovery and a
-            smoother path from browsing to checkout.
+            Live portfolio, consultancy, and storefront projects shaped around
+            clear information and practical visitor journeys.
           </p>
-          <span className="card-foot">PRODUCT &amp; COMMERCE</span>
+          <span className="card-foot">PORTFOLIO · SERVICES · COMMERCE</span>
         </article>
         <article className="approach-card">
           <span className="card-index">03</span>
           <div className="card-mark" aria-hidden="true">⌘</div>
-          <h3>Content with a home</h3>
+          <h3>ERPNext / Frappe workflows</h3>
           <p>
-            Flexible blog and CMS experiences that make publishing feel as
-            simple as reading.
+            Practical exposure to company setup, master-data imports,
+            chart-of-accounts configuration, and troubleshooting.
           </p>
-          <span className="card-foot">WEB &amp; CONTENT</span>
+          <span className="card-foot">SETUP · DATA · DOCUMENTATION</span>
         </article>
       </div>
     </section>

@@ -16,6 +16,7 @@ function Navbar() {
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
     { href: "/projects", label: "Projects" },
+    { href: "/blog", label: "Journal" },
     { href: "/contact", label: "Contact" },
   ];
 
@@ -45,7 +46,12 @@ function Navbar() {
               href={link.href}
               key={link.href}
               onClick={closeMenu}
-              aria-current={pathname === link.href ? "page" : undefined}
+              aria-current={
+                pathname === link.href ||
+                (link.href !== "/" && pathname.startsWith(`${link.href}/`))
+                  ? "page"
+                  : undefined
+              }
             >
               {link.label}
             </Link>

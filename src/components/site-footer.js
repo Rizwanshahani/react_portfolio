@@ -10,6 +10,7 @@ function SiteFooter() {
       <nav className="footer-links" aria-label="Footer navigation">
         <Link href="/about">About</Link>
         <Link href="/projects">Projects</Link>
+        <Link href="/blog">Journal</Link>
         <Link href="/contact">Contact</Link>
       </nav>
       <span className="footer-copyright">© 2026 Rizwan Shahani</span>

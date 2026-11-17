@@ -33,6 +33,20 @@
     gap: 16px;
   }
 
+  .journal-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 18px;
+  }
+
+  .journal-featured {
+    grid-template-columns: 1fr 0.9fr;
+    gap: 30px;
+  }
+
+  .journal-featured-image {
+    min-height: 350px;
+  }
+
   .contact-page-grid {
     grid-template-columns: minmax(0, 1fr) minmax(220px, 0.6fr);
     gap: 30px;
@@ -188,6 +202,56 @@
   .project-grid {
     grid-template-columns: 1fr;
     gap: 32px;
+  }
+
+  .journal-featured {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .journal-featured-image {
+    min-height: 0;
+    aspect-ratio: 1.25;
+  }
+
+  .journal-grid {
+    grid-template-columns: 1fr;
+    gap: 31px;
+  }
+
+  .journal-card-image {
+    aspect-ratio: 1.25;
+  }
+
+  .journal-article-header {
+    padding: 48px 0 30px;
+  }
+
+  .journal-article-header h1 {
+    font-size: clamp(2.8rem, 11vw, 4.2rem);
+  }
+
+  .journal-article-cover {
+    aspect-ratio: 1.12;
+  }
+
+  .journal-article-body {
+    width: 100%;
+    padding-top: 40px;
+  }
+
+  .education-card {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 70px;
+    padding: 23px;
+  }
+
+  .about-actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
   }
 
   .project-image {

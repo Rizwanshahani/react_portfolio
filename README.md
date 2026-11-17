@@ -5,9 +5,14 @@ A portfolio site built with Next.js App Router.
 ## Pages
 
 - `/` — portfolio overview
-- `/about` — background and approach
-- `/projects` — selected project concepts
+- `/about` — background, education, and downloadable CV
+- `/projects` — live websites, ERPNext work, and a learning project
+- `/blog` — journal index and original articles
+- `/blog/[slug]` — individual journal articles
 - `/contact` — contact form and social links
+
+The public CV is available at `/rizwan-shahani-cv.pdf`. Journal cover images
+are stored locally in `public/blog/`.
 
 The color theme can be switched from the navigation and is saved in the browser.
 The contact form prepares a message in the visitor's email app; it does not send

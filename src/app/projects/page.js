@@ -2,21 +2,22 @@ import Project from "../../components/project";
 
 export const metadata = {
   title: "Projects",
-  description: "Explore web design and application concepts by Rizwan Shahani.",
+  description: "Explore live websites, ERPNext implementation work, and development in progress by Rizwan Shahani.",
 };
 
 export default function ProjectsPage() {
   return (
     <main className="inner-page projects-page">
       <header className="page-intro">
-        <p className="eyebrow">Selected concepts · 2026</p>
+        <p className="eyebrow">Selected work · Frontend and implementation</p>
         <h1>
-          Ideas made
-          <em> tangible.</em>
+          Work made
+          <em> with intention.</em>
         </h1>
         <p>
-          A few of the directions I enjoy exploring: thoughtful personal
-          websites, useful product experiences, and polished digital stores.
+          A selection of live websites, practical ERPNext/Frappe experience, and
+          learning work. Each project is labeled clearly so its status and scope
+          are easy to understand.
         </p>
       </header>
       <Project showMoreLink={false} showHeading={false} />

@@ -13,10 +13,10 @@ function Home() {
           <span>experiences.</span>
         </h1>
         <p className="hero-intro">
-          I&apos;m Rizwan Shahani, a full-stack web developer creating elegant,
-          useful experiences for the web.
+          I&apos;m Rizwan Shahani, a junior frontend developer creating clear,
+          responsive web experiences with React.js and thoughtful design.
         </p>
-        <p className="hero-role">Full-stack developer <span>·</span> Design-minded builder</p>
+        <p className="hero-role">React.js <span>·</span> ERPNext / Frappe</p>
         <div className="hero-actions">
           <Link className="button button-primary" href="/projects">
             Explore my work <span aria-hidden="true">↗</span>
