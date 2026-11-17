@@ -1,39 +1,38 @@
-import React from "react";
-
 function Skill() {
+  const skills = [
+    { name: "HTML", image: "/html.png" },
+    { name: "CSS", image: "/css.png" },
+    { name: "JavaScript", image: "/js.png" },
+    { name: "React", image: "/react.png" },
+    { name: "Bootstrap", image: "/boot.jpeg" },
+    { name: "Python", image: "/python.png" },
+    { name: "PHP", image: "/php.png" },
+    { name: "C++", image: "/cpp.png" },
+  ];
+
   return (
-    <>
-      <div className="container-skill" id="skill">
-        <h1>Skills</h1>
-        <div className="skill-item">
-          <div className="skill" data-aos="flip-left" data-aos-duration="1000">
-            <img src="html.png" alt="" />
-          </div>
-          <div className="skill" data-aos="flip-left" data-aos-duration="1000">
-          <img src="css.png" alt="" />
-          </div>
-          <div className="skill" data-aos="flip-left" data-aos-duration="1000">
-          <img src="js.png" alt="" />
-          </div>
-          <div className="skill" data-aos="flip-left" data-aos-duration="1000">
-          <img src="react.png" alt="" />
-          </div>
-          <div className="skill" data-aos="flip-left" data-aos-duration="1000">
-          <img src="boot.jpeg" alt="" />
-          </div>
-          <div className="skill" data-aos="flip-left" data-aos-duration="1000">
-          <img src="python.png" alt="" />
-          </div>
-          <div className="skill" data-aos="flip-left" data-aos-duration="1000">
-          <img src="php.png" alt="" />
-          </div>
-          <div className="skill" data-aos="flip-left" data-aos-duration="1000">
-          <img src="cpp.png" alt="" />
-          </div>
-          
+    <section className="content-section skills-section" id="skill">
+      <div className="section-heading">
+        <p className="eyebrow">02 — The toolkit</p>
+        <div>
+          <h2>Tools for turning ideas <em>into reality.</em></h2>
+          <p className="section-intro">
+            A practical mix of front-end craft and full-stack fundamentals.
+          </p>
         </div>
       </div>
-    </>
+      <div className="skill-grid">
+        {skills.map((skill, index) => (
+          <div className="skill-card" key={skill.name}>
+            <span className="skill-index">0{index + 1}</span>
+            <div className="skill-logo">
+              <img src={skill.image} alt="" />
+            </div>
+            <span className="skill-name">{skill.name}</span>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }
 

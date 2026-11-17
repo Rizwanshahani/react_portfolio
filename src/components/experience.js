@@ -1,41 +1,49 @@
-import React from "react";
-
 function Experience() {
   return (
-    <>
-      <div className="container-experience" id="experience">
-        <h1>Experience</h1>
-        <center>
-          <div className="ex"data-aos="zoom-in"data-aos-duration="1000">
-            <div className="text">
-              <h1>🎨 Personal Portfolio Website:</h1>
-              <p>
-                Build a responsive portfolio with HTML, CSS, and JavaScript,
-                then host it on GitHub Pages or Netlify.
-              </p>
-            </div>
-          </div>
-          <div className="ex"data-aos="zoom-in" data-aos-duration="1000">
-            <div className="text">
-              <h1>🛒 E-Commerce Website:</h1>
-              <p>
-                Develop a basic e-commerce site with product listings, a
-                shopping cart, and Stripe payment integration.
-              </p>
-            </div>
-          </div>
-          <div className="ex"data-aos="zoom-in"data-aos-duration="1000">
-            <div className="text">
-              <h1>🏢 Blog Platform with CMS:</h1>
-              <p>
-                Create a simple blog platform with user authentication, content
-                management, and a database like MySQL or MongoDB
-              </p>
-            </div>
-          </div>
-        </center>
+    <section className="content-section approach-section" id="experience">
+      <div className="section-heading">
+        <p className="eyebrow">01 — What I do</p>
+        <div>
+          <h2>Good work starts with <em>good thinking.</em></h2>
+          <p className="section-intro">
+            I bring thoughtful design and dependable engineering together to
+            create digital products that feel effortless to use.
+          </p>
+        </div>
       </div>
-    </>
+      <div className="approach-grid">
+        <article className="approach-card">
+          <span className="card-index">01</span>
+          <div className="card-mark" aria-hidden="true">✳</div>
+          <h3>Portfolio experiences</h3>
+          <p>
+            Responsive, personal websites built to tell a story and make a
+            lasting first impression.
+          </p>
+          <span className="card-foot">DESIGN &amp; DEVELOPMENT</span>
+        </article>
+        <article className="approach-card">
+          <span className="card-index">02</span>
+          <div className="card-mark" aria-hidden="true">◈</div>
+          <h3>E-commerce, made clear</h3>
+          <p>
+            Considered storefronts with intuitive product discovery and a
+            smoother path from browsing to checkout.
+          </p>
+          <span className="card-foot">PRODUCT &amp; COMMERCE</span>
+        </article>
+        <article className="approach-card">
+          <span className="card-index">03</span>
+          <div className="card-mark" aria-hidden="true">⌘</div>
+          <h3>Content with a home</h3>
+          <p>
+            Flexible blog and CMS experiences that make publishing feel as
+            simple as reading.
+          </p>
+          <span className="card-foot">WEB &amp; CONTENT</span>
+        </article>
+      </div>
+    </section>
   );
 }
 

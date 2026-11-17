@@ -1,37 +1,46 @@
-import React, { useEffect, useRef } from 'react'
-import Typed from 'typed.js'
+import Link from "next/link";
 
-const Home = ()=> {
-  const typedref=useRef(null)
-  useEffect(() => {
-    const option={
-      strings: ["Welcome to my potfolio","My Name is Rizwan Shahani","I'm Full Stack Web Developer"],
-      typeSpeed:50,
-      backSpeed:50,
-      loop:true
-    }
-  const typed= new Typed(typedref.current, option)
-    return () => {
-      typed.destroy()
-    }
-  }, [])
-  
+function Home() {
   return (
-    <>
-      <div className="container-home"id='home'>
-        <div className="right"data-aos="fade-up-right"data-aos-duration="1000">
-       
-            <h1>Rizwan Shahani</h1>
-            <p ref={typedref}></p>
-            
-        </div>
-
-        <div className="left"data-aos="fade-up-left"data-aos-duration="1000">
-            <img src="my.jpg" alt="" />
+    <section className="container-home" id="home">
+      <div className="hero-copy">
+        <p className="eyebrow">
+          <span className="status-dot" aria-hidden="true" />
+          Independent developer <span className="eyebrow-divider">/</span> Pakistan
+        </p>
+        <h1>
+          Thoughtful digital
+          <span>experiences.</span>
+        </h1>
+        <p className="hero-intro">
+          I&apos;m Rizwan Shahani, a full-stack web developer creating elegant,
+          useful experiences for the web.
+        </p>
+        <p className="hero-role">Full-stack developer <span>·</span> Design-minded builder</p>
+        <div className="hero-actions">
+          <Link className="button button-primary" href="/projects">
+            Explore my work <span aria-hidden="true">↗</span>
+          </Link>
+          <Link className="button button-quiet" href="/contact">
+            Get in touch <span aria-hidden="true">↓</span>
+          </Link>
         </div>
       </div>
-    </>
-  )
+
+      <div className="hero-portrait">
+        <div className="portrait-frame">
+          <img src="/my.jpg" alt="Rizwan Shahani" />
+          <div className="portrait-caption">
+            <span className="caption-index">01 / 05</span>
+            <span>Crafting with intention</span>
+          </div>
+        </div>
+        <span className="portrait-orbit orbit-one" aria-hidden="true" />
+        <span className="portrait-orbit orbit-two" aria-hidden="true" />
+        <span className="portrait-note">PORTFOLIO&nbsp; — &nbsp;2026</span>
+      </div>
+    </section>
+  );
 }
 
-export default Home
+export default Home;
