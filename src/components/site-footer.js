@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { FiMail } from "react-icons/fi";
+import socialLinks from "../data/social-links";
 
 function SiteFooter() {
   return (
@@ -11,8 +13,27 @@ function SiteFooter() {
         <Link href="/about">About</Link>
         <Link href="/projects">Projects</Link>
         <Link href="/blog">Journal</Link>
-        <Link href="/contact">Contact</Link>
+        <Link href="/contact">
+          <FiMail aria-hidden="true" />
+          Contact
+        </Link>
       </nav>
+      <div className="footer-social">
+        <span className="footer-social-label">Connect &amp; Share</span>
+        <div className="footer-social-links">
+          {socialLinks.map((social) => (
+            <a
+              href={social.href}
+              key={social.label}
+              aria-label={social.label}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {social.icon}
+            </a>
+          ))}
+        </div>
+      </div>
       <span className="footer-copyright">© 2026 Rizwan Shahani</span>
     </footer>
   );

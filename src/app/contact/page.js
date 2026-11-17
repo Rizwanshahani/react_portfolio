@@ -1,28 +1,10 @@
-import {
-  FaFacebookF,
-  FaGithub,
-  FaInstagram,
-  FaLinkedinIn,
-  FaWhatsapp,
-} from "react-icons/fa";
 import ContactForm from "../../components/contact-form";
+import socialLinks from "../../data/social-links";
 
 export const metadata = {
   title: "Contact",
   description: "Get in touch with Rizwan Shahani about a project.",
 };
-
-const socialLinks = [
-  { label: "WhatsApp", href: "https://wa.me/923197941472", icon: <FaWhatsapp /> },
-  { label: "Instagram", href: "https://www.instagram.com/rizwanshahani7624", icon: <FaInstagram /> },
-  { label: "LinkedIn", href: "https://www.linkedin.com/in/muhammad-rizwan-0a967b41b", icon: <FaLinkedinIn /> },
-  { label: "GitHub", href: "https://github.com/Rizwanshahani", icon: <FaGithub /> },
-  {
-    label: "Share portfolio on Facebook",
-    href: "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Frizwanshahani.vercel.app",
-    icon: <FaFacebookF />,
-  },
-];
 
 export default function ContactPage() {
   return (
