@@ -1,8 +1,8 @@
 @media (max-width: 900px) {
   .container-home {
-    min-height: 680px;
     grid-template-columns: 1fr 0.78fr;
     gap: 36px;
+    padding-bottom: 56px;
   }
 
   .hero-copy h1 {
@@ -14,7 +14,15 @@
   }
 
   .content-section {
-    padding: 68px 0;
+    padding: 56px 0;
+  }
+
+  .projects-section {
+    padding-bottom: 56px;
+  }
+
+  .contact-section {
+    padding: 56px 0;
   }
 
   .approach-card {
@@ -107,10 +115,9 @@
   }
 
   .container-home {
-    min-height: 0;
     grid-template-columns: 1fr;
     gap: 42px;
-    padding: 20px 0 56px;
+    padding: 20px 0 44px;
   }
 
   .hero-copy h1 {
@@ -133,7 +140,7 @@
   }
 
   .content-section {
-    padding: 54px 0;
+    padding: 44px 0;
   }
 
   .section-heading {
@@ -277,7 +284,11 @@
   }
 
   .projects-section {
-    padding-bottom: 60px;
+    padding-bottom: 44px;
+  }
+
+  .contact-section {
+    padding: 44px 0;
   }
 
   .contact-panel {
