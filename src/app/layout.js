@@ -4,6 +4,7 @@ import '../qry.css';
 import Navbar from '../components/navbar';
 import SiteFooter from '../components/site-footer';
 import { ThemeProvider } from '../components/theme-provider';
+import WhatsAppButton from '../components/whatsapp-button';
 
 export const metadata = {
   metadataBase: new URL('https://rizwanshahani.vercel.app'),
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider>
           <Navbar />
           {children}
+          <WhatsAppButton />
           <SiteFooter />
         </ThemeProvider>
       </body>

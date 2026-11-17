@@ -509,7 +509,7 @@ main {
 .project-image {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 1.06;
+  aspect-ratio: 1.42;
   background: #20211c;
 }
 
@@ -533,6 +533,214 @@ main {
   display: block;
   width: 100%;
   height: 100%;
+}
+
+.project-image-preview::after {
+  display: none;
+}
+
+.project-preview {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  padding: clamp(14px, 2vw, 23px);
+  background:
+    radial-gradient(ellipse at 85% 50%, rgba(201, 169, 110, 0.19), transparent 50%),
+    #171a1c;
+  color: #f0ede5;
+}
+
+.project-preview-electronics {
+  --preview-accent: #d4b77a;
+  background:
+    radial-gradient(ellipse at 82% 55%, rgba(75, 120, 157, 0.36), transparent 48%),
+    #101923;
+}
+
+.project-preview-fashion {
+  --preview-accent: #a37b5e;
+  background:
+    radial-gradient(ellipse at 75% 55%, rgba(182, 146, 117, 0.32), transparent 52%),
+    #e8dfd3;
+  color: #29231f;
+}
+
+.project-preview-erp {
+  --preview-accent: #9fbd9d;
+  background:
+    radial-gradient(ellipse at 78% 45%, rgba(58, 115, 81, 0.35), transparent 50%),
+    #17221d;
+}
+
+.project-preview-stack {
+  --preview-accent: #93b7d3;
+  background:
+    radial-gradient(ellipse at 80% 60%, rgba(63, 106, 154, 0.33), transparent 50%),
+    #151b26;
+}
+
+.project-preview-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid currentColor;
+  border-color: color-mix(in srgb, currentColor 22%, transparent);
+}
+
+.project-preview-brand {
+  color: var(--preview-accent, var(--gold-light));
+  font-family: var(--serif);
+  font-size: clamp(0.7rem, 1.3vw, 0.88rem);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+.project-preview-label {
+  color: currentColor;
+  font-size: clamp(0.48rem, 0.8vw, 0.58rem);
+  letter-spacing: 0.09em;
+  opacity: 0.7;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.project-preview-content {
+  display: grid;
+  flex: 1;
+  grid-template-columns: minmax(0, 1fr) minmax(95px, 0.85fr);
+  align-items: center;
+  gap: 10px;
+  padding: 12px 0 8px;
+}
+
+.project-preview-copy > p {
+  margin: 0 0 8px;
+  color: var(--preview-accent, var(--gold-light));
+  font-size: clamp(0.47rem, 0.8vw, 0.58rem);
+  letter-spacing: 0.12em;
+}
+
+.project-preview-copy h4 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(1.05rem, 2.4vw, 1.72rem);
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 1.1;
+}
+
+.project-preview-copy > span {
+  display: block;
+  margin-top: 9px;
+  font-size: clamp(0.54rem, 0.9vw, 0.66rem);
+  line-height: 1.55;
+  opacity: 0.72;
+}
+
+.project-preview-art {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 5px;
+}
+
+.project-preview-item {
+  position: relative;
+  display: flex;
+  min-width: 0;
+  min-height: 74px;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  padding: 6px 3px;
+  border: 1px solid color-mix(in srgb, currentColor 18%, transparent);
+  background: color-mix(in srgb, currentColor 7%, transparent);
+  font-size: clamp(0.4rem, 0.7vw, 0.5rem);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.project-preview-item i {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: var(--preview-accent, var(--gold-light));
+  font-size: 0.42rem;
+  font-style: normal;
+}
+
+.project-preview-electronics .project-preview-item::before {
+  width: 36%;
+  height: 42%;
+  margin: auto;
+  border: 1px solid var(--preview-accent);
+  border-radius: 7px;
+  background: linear-gradient(140deg, rgba(240, 237, 229, 0.22), transparent);
+  content: "";
+}
+
+.project-preview-electronics .project-preview-item:nth-child(2)::before {
+  width: 52%;
+  height: 35%;
+  border-radius: 50% 50% 8px 8px;
+}
+
+.project-preview-fashion .project-preview-item::before {
+  width: 44%;
+  height: 48%;
+  margin: auto;
+  border-radius: 45% 45% 6px 6px;
+  background: linear-gradient(155deg, #c8a98d, #8b6857);
+  content: "";
+}
+
+.project-preview-fashion .project-preview-item:nth-child(2)::before {
+  background: linear-gradient(155deg, #ddd1bf, #a88970);
+}
+
+.project-preview-fashion .project-preview-item:nth-child(3)::before {
+  background: linear-gradient(155deg, #9f7d68, #533d33);
+}
+
+.project-preview-erp .project-preview-art,
+.project-preview-stack .project-preview-art {
+  grid-template-columns: 1fr;
+  gap: 5px;
+}
+
+.project-preview-erp .project-preview-item,
+.project-preview-stack .project-preview-item {
+  min-height: 22px;
+  justify-content: flex-start;
+  padding: 5px 7px;
+  border-radius: 2px;
+  background: rgba(240, 237, 229, 0.05);
+  text-align: left;
+}
+
+.project-preview-erp .project-preview-item::before,
+.project-preview-stack .project-preview-item::before {
+  width: 6px;
+  height: 6px;
+  flex: 0 0 auto;
+  margin-right: 7px;
+  border-radius: 50%;
+  background: var(--preview-accent);
+  content: "";
+}
+
+.project-preview-caption {
+  padding-top: 8px;
+  border-top: 1px solid color-mix(in srgb, currentColor 18%, transparent);
+  color: currentColor;
+  font-size: 0.52rem;
+  letter-spacing: 0.05em;
+  opacity: 0.68;
 }
 
 .project-card:hover .project-image img {
@@ -781,6 +989,59 @@ main {
 .contact-cta:hover {
   border-color: #292a25;
   background: #292a25;
+}
+
+.whatsapp-float {
+  position: fixed;
+  z-index: 25;
+  right: 24px;
+  bottom: 23px;
+  display: grid;
+  width: 54px;
+  height: 54px;
+  align-items: center;
+  justify-items: center;
+  border: 1px solid rgba(9, 43, 22, 0.22);
+  border-radius: 50%;
+  background: #25d366;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.24);
+  color: #0b2412;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+
+.whatsapp-float svg {
+  font-size: 1.45rem;
+}
+
+.whatsapp-float span {
+  position: absolute;
+  right: calc(100% + 10px);
+  width: max-content;
+  padding: 9px 12px;
+  border: 1px solid var(--line);
+  background: var(--surface-raised);
+  color: var(--paper);
+  font-size: 0.68rem;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(4px);
+  transition: opacity 160ms ease, transform 160ms ease, visibility 160ms ease;
+  visibility: hidden;
+}
+
+.whatsapp-float:hover span,
+.whatsapp-float:focus-visible span {
+  opacity: 1;
+  transform: translateX(0);
+  visibility: visible;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-3px);
+  background: #35df74;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
 }
 
 .inner-page {

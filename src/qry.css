@@ -258,6 +258,28 @@
     aspect-ratio: 1.18;
   }
 
+  .project-preview {
+    padding: 15px;
+  }
+
+  .project-preview-content {
+    grid-template-columns: minmax(0, 1fr) minmax(105px, 0.8fr);
+    gap: 12px;
+  }
+
+  .project-preview-copy h4 {
+    font-size: clamp(1.25rem, 6vw, 1.8rem);
+  }
+
+  .project-preview-copy > span {
+    font-size: 0.68rem;
+  }
+
+  .project-preview-item {
+    min-height: 82px;
+    font-size: 0.5rem;
+  }
+
   .project-details {
     padding-top: 14px;
   }
@@ -386,6 +408,13 @@
 
   .contact-form {
     padding: 20px 16px;
+  }
+
+  .whatsapp-float {
+    right: 12px;
+    bottom: 14px;
+    width: 48px;
+    height: 48px;
   }
 
   .site-footer {

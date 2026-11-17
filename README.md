@@ -14,6 +14,11 @@ A portfolio site built with Next.js App Router.
 The public CV is available at `/rizwan-shahani-cv.pdf`. Journal cover images
 are stored locally in `public/blog/`.
 
+The contact page includes LinkedIn and GitHub links, a Facebook sharing action,
+and WhatsApp at `+92 319 7941472`. The project gallery uses live-site captures
+where available; other projects use labeled, project-specific previews rather
+than unrelated stock imagery.
+
 The color theme can be switched from the navigation and is saved in the browser.
 The contact form prepares a message in the visitor's email app; it does not send
 submissions to a server.

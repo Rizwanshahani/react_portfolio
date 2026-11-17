@@ -1,6 +1,37 @@
 import Link from "next/link";
 import projects from "../data/projects";
 
+function ProjectPreview({ preview }) {
+  return (
+    <div
+      className={`project-preview project-preview-${preview.kind}`}
+      role="img"
+      aria-label={preview.alt}
+    >
+      <div className="project-preview-topbar">
+        <span className="project-preview-brand">{preview.brand}</span>
+        <span className="project-preview-label">{preview.label}</span>
+      </div>
+      <div className="project-preview-content">
+        <div className="project-preview-copy">
+          <p>{preview.eyebrow}</p>
+          <h4>{preview.title}</h4>
+          <span>{preview.description}</span>
+        </div>
+        <div className="project-preview-art" aria-hidden="true">
+          {preview.items.map((item, index) => (
+            <span className="project-preview-item" key={item}>
+              <i>{String(index + 1).padStart(2, "0")}</i>
+              {item}
+            </span>
+          ))}
+        </div>
+      </div>
+      <span className="project-preview-caption">{preview.caption}</span>
+    </div>
+  );
+}
+
 function Project({ showMoreLink = true, showHeading = true }) {
   const displayedProjects = showMoreLink ? projects.slice(0, 3) : projects;
 
@@ -21,19 +52,25 @@ function Project({ showMoreLink = true, showHeading = true }) {
       <div className="project-grid">
         {displayedProjects.map((project) => (
           <article className="project-card" key={project.number}>
-            <div className="project-image">
+            <div className={`project-image${project.preview ? " project-image-preview" : ""}`}>
               {project.href ? (
                 <a
                   className="project-image-link"
                   href={project.href}
                   target="_blank"
                   rel="noreferrer"
-                  aria-label={`${project.status}: ${project.title}`}
+                  aria-label={`${project.actionLabel || project.status}: ${project.title}`}
                 >
-                  <img src={project.image} alt={project.alt} />
+                  {project.image ? (
+                    <img src={project.image} alt={project.alt} />
+                  ) : (
+                    <ProjectPreview preview={project.preview} />
+                  )}
                 </a>
-              ) : (
+              ) : project.image ? (
                 <img src={project.image} alt={project.alt} />
+              ) : (
+                <ProjectPreview preview={project.preview} />
               )}
               <span className="project-number">{project.number}</span>
               {project.href && <span className="project-arrow" aria-hidden="true">↗</span>}
@@ -50,7 +87,7 @@ function Project({ showMoreLink = true, showHeading = true }) {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    {project.status} <span aria-hidden="true">↗</span>
+                    {project.actionLabel || project.status} <span aria-hidden="true">↗</span>
                   </a>
                 ) : (
                   <span className="project-status">{project.status}</span>

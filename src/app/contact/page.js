@@ -1,9 +1,10 @@
 import {
+  FaFacebookF,
   FaGithub,
   FaInstagram,
+  FaLinkedinIn,
   FaWhatsapp,
 } from "react-icons/fa";
-import { TiSocialLinkedinCircular } from "react-icons/ti";
 import ContactForm from "../../components/contact-form";
 
 export const metadata = {
@@ -12,10 +13,15 @@ export const metadata = {
 };
 
 const socialLinks = [
-  { label: "WhatsApp", href: "https://wa.me/923090687624", icon: <FaWhatsapp /> },
+  { label: "WhatsApp", href: "https://wa.me/923197941472", icon: <FaWhatsapp /> },
   { label: "Instagram", href: "https://www.instagram.com/rizwanshahani7624", icon: <FaInstagram /> },
-  { label: "LinkedIn", href: "https://www.linkedin.com/in/muhammad-rizwan-0a967b41b", icon: <TiSocialLinkedinCircular /> },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/muhammad-rizwan-0a967b41b", icon: <FaLinkedinIn /> },
   { label: "GitHub", href: "https://github.com/Rizwanshahani", icon: <FaGithub /> },
+  {
+    label: "Share portfolio on Facebook",
+    href: "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Frizwanshahani.vercel.app",
+    icon: <FaFacebookF />,
+  },
 ];
 
 export default function ContactPage() {
@@ -43,7 +49,7 @@ export default function ContactPage() {
           </a>
           <p className="contact-location">Based in Pakistan · Working worldwide</p>
           <div className="contact-aside-rule" />
-          <p className="social-label">FIND ME ELSEWHERE</p>
+          <p className="social-label">CONNECT &amp; SHARE</p>
           <div className="contact-list">
             {socialLinks.map((social) => (
               <a

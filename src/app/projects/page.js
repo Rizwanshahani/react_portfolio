@@ -17,7 +17,8 @@ export default function ProjectsPage() {
         <p>
           A selection of live websites, practical ERPNext/Frappe experience, and
           learning work. Each project is labeled clearly so its status and scope
-          are easy to understand.
+          are easy to understand. Live captures are used when available; other
+          cards have labeled, project-specific previews.
         </p>
       </header>
       <Project showMoreLink={false} showHeading={false} />
