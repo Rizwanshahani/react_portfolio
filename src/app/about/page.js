@@ -37,7 +37,9 @@ export default function AboutPage() {
           <p>
             Alongside web development, I have practical exposure to ERPNext and
             Frappe setup workflows, master-data imports, chart-of-accounts
-            configuration, and implementation documentation.
+            configuration, and implementation documentation. I also lead
+            Yovarin, a company focused on enterprise architecture, Next.js
+            applications, and ERPNext implementations.
           </p>
           <div className="about-actions">
             <a className="button button-primary" href="/rizwan-shahani-cv.pdf" download>

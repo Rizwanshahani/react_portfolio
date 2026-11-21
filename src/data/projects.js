@@ -1,6 +1,26 @@
 const projects = [
   {
     number: "01",
+    title: "Yovarin — Enterprise Architecture",
+    category: "My Company · ERPNext / SaaS",
+    description:
+      "A sovereign enterprise architecture company delivering Next.js and ERPNext ecosystems for manufacturing, finance, inventory, and operational automation.",
+    href: "https://yovarin.yovarin.workers.dev/",
+    status: "Visit live site",
+    preview: {
+      kind: "erp",
+      brand: "YOVARIN",
+      label: "Enterprise · ERPNext",
+      eyebrow: "PRIVATE ENTERPRISE ARCHITECTURE",
+      title: "Precision at every scale.",
+      description: "Unified ERP, SaaS, and operational intelligence.",
+      items: ["ERPNext ecosystems", "Bespoke Next.js", "Secure AI pilot"],
+      caption: "Live company website preview",
+      alt: "Illustrative enterprise preview for Yovarin",
+    },
+  },
+  {
+    number: "02",
     title: "React Personal Portfolio",
     category: "Frontend · Live",
     description:
@@ -11,7 +31,7 @@ const projects = [
     status: "Visit live site",
   },
   {
-    number: "02",
+    number: "03",
     title: "GlobalPath Visa Website",
     category: "Consultancy · Live",
     description:
@@ -22,7 +42,7 @@ const projects = [
     status: "Visit live site",
   },
   {
-    number: "03",
+    number: "04",
     title: "AURA E-Commerce Storefront",
     category: "Technology · Live MERN e-commerce",
     description:
@@ -33,7 +53,7 @@ const projects = [
     status: "Visit live site",
   },
   {
-    number: "04",
+    number: "05",
     title: "Raj Meena Fashion Store",
     category: "Fashion · Live storefront",
     description:
@@ -44,7 +64,7 @@ const projects = [
     status: "Visit live site",
   },
   {
-    number: "05",
+    number: "06",
     title: "Al Haiwan Genetics",
     category: "ERPNext / Frappe · Practical work",
     description:
@@ -67,7 +87,7 @@ const projects = [
     status: "Implementation experience",
   },
   {
-    number: "06",
+    number: "07",
     title: "Full-Stack Development Learning Project",
     category: "React / Next.js · In progress",
     description:

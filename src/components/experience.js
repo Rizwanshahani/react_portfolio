@@ -38,7 +38,8 @@ function Experience() {
           <h3>ERPNext / Frappe workflows</h3>
           <p>
             Practical exposure to company setup, master-data imports,
-            chart-of-accounts configuration, and troubleshooting.
+            chart-of-accounts configuration, and troubleshooting. This work
+            extends to Yovarin, my enterprise architecture company.
           </p>
           <span className="card-foot">SETUP · DATA · DOCUMENTATION</span>
         </article>
